@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\class_student\\desktop\\isayproj\\isayapi\\isayapi\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\class_student\\desktop\\isayproj\\isayapi\\isayapi\\sensorscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\sensorscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\class_student\\desktop\\isayproj\\isayapi\\isayapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\class_student\\desktop\\isayproj\\isayapi\\isayapi\\models\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\class_student\\desktop\\isayproj\\isayapi\\isayapi\\isayapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\isayapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\class_student\\desktop\\isayproj\\isayapi\\isayapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\class_student\\desktop\\isayproj\\isayapi\\isayapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SensorsContext.cs",
+              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\SensorsContext.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\SensorsContext.cs",
+              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\SensorsContext.cs",
+              "RelativeToolTip": "IsayAPI\\SensorsContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T10:15:23.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "IsayAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "IsayAPI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-27T08:03:22.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "IsayAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\appsettings.json",
+              "RelativeToolTip": "IsayAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-27T08:03:03.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IsayAPI.http",
+              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\IsayAPI.http",
+              "RelativeDocumentMoniker": "IsayAPI\\IsayAPI.http",
+              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\IsayAPI.http",
+              "RelativeToolTip": "IsayAPI\\IsayAPI.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-05-27T08:01:26.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiController.cs",
+              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\Controllers\\ApiController.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Controllers\\ApiController.cs",
+              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\Controllers\\ApiController.cs",
+              "RelativeToolTip": "IsayAPI\\Controllers\\ApiController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAwwDEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T07:19:43.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sensor.cs",
+              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\Models\\Sensor.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Models\\Sensor.cs",
+              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\Models\\Sensor.cs",
+              "RelativeToolTip": "IsayAPI\\Models\\Sensor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T07:10:13.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\Program.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\IsayProj\\IsayAPI\\IsayAPI\\Program.cs",
+              "RelativeToolTip": "IsayAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T07:00:05.544Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

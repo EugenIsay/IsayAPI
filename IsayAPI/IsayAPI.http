@@ -1,0 +1,6 @@
+@IsayAPI_HostAddress = http://localhost:5128
+
+GET {{IsayAPI_HostAddress}}/Models/Sensor
+Accept: application/json
+
+###
