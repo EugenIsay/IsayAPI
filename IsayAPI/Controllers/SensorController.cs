@@ -7,11 +7,11 @@ namespace IsayAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ApiController : ControllerBase
+    public class SensorController : ControllerBase
     {
 
         private readonly SensorsContext _sensorsContext;
-        public ApiController(SensorsContext context) 
+        public SensorController(SensorsContext context) 
         {
             _sensorsContext = context;
         }
@@ -43,10 +43,18 @@ namespace IsayAPI.Controllers
             return NoContent();
 
         }
-        [HttpPut(template: "{id}")]
-        //public async Task<ActionResult<List<Sensor>>> UpdateSensor(int id, Sensor sensor)
-        //{
+        [HttpPut(template: "{id}, {sensor}")]
+        public async Task<ActionResult<List<Sensor>>> UpdateSensor(int id, Sensor sensor)
+        {
+            Sensor need_sensor = await _sensorsContext.Sensors.FindAsync(id);
+            if (sensor != null)
+            {
+                need_sensor.sensor_name = sensor.sensor_name;
+                need_sensor.sensor_id = sensor.sensor_id;
+                await _sensorsContext.SaveChangesAsync();
+            }
 
-        //}
+            return NoContent();
+        }
     }
 }
