@@ -9,8 +9,8 @@ namespace IsayAPI.Controllers
     [ApiController]
     public class MeteostationController: ControllerBase
     {
-        private readonly  MeteostationsContext _meteostationsContext;
-        public MeteostationController(MeteostationsContext context) 
+        private readonly Context _meteostationsContext;
+        public MeteostationController(Context context) 
         {
             _meteostationsContext = context;
         }

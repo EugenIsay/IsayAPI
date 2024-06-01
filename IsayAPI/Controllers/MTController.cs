@@ -9,8 +9,8 @@ namespace IsayAPI.Controllers
     [ApiController]
     public class MTController: ControllerBase
     {
-        private readonly MTContext _mtContext;
-        public MTController(MTContext context) 
+        private readonly Context _mtContext;
+        public MTController(Context context) 
         {
             _mtContext = context;
         }

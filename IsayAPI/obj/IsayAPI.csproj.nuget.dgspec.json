@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PROFI\\Desktop\\IsayProj\\IsayAPI\\IsayAPI.csproj": {}
+    "C:\\Users\\profi\\Desktop\\IsayProj\\Api\\IsayAPI\\IsayAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PROFI\\Desktop\\IsayProj\\IsayAPI\\IsayAPI.csproj": {
+    "C:\\Users\\profi\\Desktop\\IsayProj\\Api\\IsayAPI\\IsayAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PROFI\\Desktop\\IsayProj\\IsayAPI\\IsayAPI.csproj",
+        "projectUniqueName": "C:\\Users\\profi\\Desktop\\IsayProj\\Api\\IsayAPI\\IsayAPI.csproj",
         "projectName": "IsayAPI",
-        "projectPath": "C:\\Users\\PROFI\\Desktop\\IsayProj\\IsayAPI\\IsayAPI.csproj",
-        "packagesPath": "C:\\Users\\PROFI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PROFI\\Desktop\\IsayProj\\IsayAPI\\obj\\",
+        "projectPath": "C:\\Users\\profi\\Desktop\\IsayProj\\Api\\IsayAPI\\IsayAPI.csproj",
+        "packagesPath": "C:\\Users\\profi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\profi\\Desktop\\IsayProj\\Api\\IsayAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PROFI\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\profi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -78,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

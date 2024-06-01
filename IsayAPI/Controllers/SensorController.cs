@@ -10,8 +10,8 @@ namespace IsayAPI.Controllers
     public class SensorController : ControllerBase
     {
 
-        private readonly SensorsContext _sensorsContext;
-        public SensorController(SensorsContext context) 
+        private readonly Context _sensorsContext;
+        public SensorController(Context context) 
         {
             _sensorsContext = context;
         }

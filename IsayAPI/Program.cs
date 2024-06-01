@@ -10,8 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<SensorsContext>(optionsAction: opt => opt.UseNpgsql(connectionString: "Host=193.176.78.35;Port=5433;Username=user8;Password=xKdhr"));
-builder.Services.AddDbContext<MTContext>(optionsAction: opt => opt.UseNpgsql(connectionString: "Host=193.176.78.35;Port=5433;Username=user8;Password=xKdhr"));
+builder.Services.AddDbContext<Context>(optionsAction: opt => opt.UseNpgsql(connectionString: "Host=193.176.78.35;Port=5433;Username=user8;Password=xKdhr"));
 
 var app = builder.Build();
 
