@@ -1,9 +1,17 @@
-﻿namespace IsayAPI.Models;
+﻿using System;
+using System.Collections.Generic;
 
-public class Meteostation
+namespace IsayAPI.Models;
+
+public partial class Meteostation
 {
-    public int station_id { get; set; }
-    public string station_name { get; set; }
-    public decimal station_long { get; set; }
-    public decimal station_lat { get; set; }
+    public int StationId { get; set; }
+
+    public string? StationName { get; set; }
+
+    public decimal? StationLongitude { get; set; }
+
+    public decimal? StationLatitude { get; set; }
+
+    public virtual ICollection<MeteostationsSensor> MeteostationsSensors { get; set; } = new List<MeteostationsSensor>();
 }

@@ -1,14 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
 
-namespace IsayAPI.Models
+namespace IsayAPI.Models;
+
+public partial class Sensor
 {
-    public class Sensor
-    {
-        public string sensor_name { get; set; }
-        public int sensor_id { get; set; }
-        public List<Measurement_Type> measurement_types { get; set; }
-        public List<Sensor_Measurement> sensor_Measurements { get; set; }
+    public int SensorId { get; set; }
 
-    }
+    public string? SensorName { get; set; }
+
+    public virtual ICollection<MeteostationsSensor> MeteostationsSensors { get; set; } = new List<MeteostationsSensor>();
 }

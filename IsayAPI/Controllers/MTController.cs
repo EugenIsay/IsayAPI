@@ -9,32 +9,32 @@ namespace IsayAPI.Controllers
     [ApiController]
     public class MTController: ControllerBase
     {
-        private readonly Context _mtContext;
-        public MTController(Context context) 
+        private readonly User8Context _mtContext;
+        public MTController(User8Context context) 
         {
             _mtContext = context;
         }
         [HttpGet]
-        public async Task<ActionResult<List<Measurement_Type>>> GetMesType()
+        public async Task<ActionResult<List<MeasurementsType>>> GetMesType()
         {
-            return await _mtContext.Measurements_Type.Select(Measurement_Type =>  Measurement_Type).ToListAsync();
+            return await _mtContext.MeasurementsTypes.Select(Measurement_Type =>  Measurement_Type).ToListAsync();
         }
         [HttpGet(template: "{id}")]
-        public async Task<ActionResult<Measurement_Type>> GetMesTypeItem(int id)
+        public async Task<ActionResult<MeasurementsType>> GetMesTypeItem(int id)
         {
-            return await _mtContext.Measurements_Type.FindAsync(id) ?? throw new InvalidOperationException();
+            return await _mtContext.MeasurementsTypes.FindAsync(id) ?? throw new InvalidOperationException();
         }
         [HttpDelete(template: "{id}")]
-        public async Task<ActionResult<List<Measurement_Type>>> DeleteMesType(int id)
+        public async Task<ActionResult<List<MeasurementsType>>> DeleteMesType(int id)
         {
-            Measurement_Type? mt = await _mtContext.Measurements_Type.FindAsync(id);
+            MeasurementsType? mt = await _mtContext.MeasurementsTypes.FindAsync(id);
             if (mt != null) { _mtContext.Remove(mt); }
             await _mtContext.SaveChangesAsync();
             return NoContent();
 
         }
         [HttpPost]
-        public async Task<ActionResult<List<Measurement_Type>>> AddMesType(Measurement_Type mt)
+        public async Task<ActionResult<List<MeasurementsType>>> AddMesType(MeasurementsType mt)
         {
             _mtContext.Add(mt);
             await _mtContext.SaveChangesAsync();
@@ -42,14 +42,14 @@ namespace IsayAPI.Controllers
 
         }
         [HttpPut(template: "{id}, {sensor}")]
-        public async Task<ActionResult<List<Measurement_Type>>> UpdateMesType(int id, Measurement_Type mt)
+        public async Task<ActionResult<List<MeasurementsType>>> UpdateMesType(int id, MeasurementsType mt)
         {
-            Measurement_Type need_mt = await _mtContext.Measurements_Type.FindAsync(id);
+            MeasurementsType need_mt = await _mtContext.MeasurementsTypes.FindAsync(id);
             if (need_mt != null)
             {
-                need_mt.type_id = mt.type_id;
-                need_mt.type_name = mt.type_name;
-                need_mt.type_units = mt.type_units;
+                need_mt.TypeId = mt.TypeId;
+                need_mt.TypeName = mt.TypeName;
+                need_mt.TypeUnits = mt.TypeUnits;
                 await _mtContext.SaveChangesAsync();
             }
             return NoContent();

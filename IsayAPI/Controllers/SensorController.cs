@@ -1,7 +1,10 @@
 ﻿using IsayAPI.Models;
+using IsayAPI.Models.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
+using System.Linq;
 
 namespace IsayAPI.Controllers
 {
@@ -10,15 +13,30 @@ namespace IsayAPI.Controllers
     public class SensorController : ControllerBase
     {
 
-        private readonly Context _sensorsContext;
-        public SensorController(Context context) 
+        private readonly User8Context _sensorsContext;
+        public SensorController(User8Context context) 
         {
             _sensorsContext = context;
         }
         [HttpGet]
-        public async Task<ActionResult<List<Sensor>>> GetSensors()
+        public async Task<ActionResult<List<SensorResponse>>> GetSensors()
         {
-            return await _sensorsContext.Sensors.Select(sensor => sensor).ToListAsync();
+            //List<Sensor> sensors = new List<Sensor>();
+            //_sensorsContext.SensorsMeasurements.Select(s => s.MeasurementFormula);
+            //return await _sensorsContext.Sensors.Select(sensor => sensor).LeftJoin(_sensorsContext.SensorsMeasurements, s => s.SensorId, e => e.SensorId, (s, e) => sensors);
+            return await _sensorsContext.Sensors.Select(sensor => sensor)
+                .Join(_sensorsContext.SensorsMeasurements,
+                s => s.SensorId,
+                e => e.SensorId,
+                (s, e) => new List<SensorResponse>
+                {  
+                    new SensorResponse { 
+                        sensor_id = s.SensorId,
+                        sensor_name = s.SensorName,
+                        measurements = _sensorsContext.MeasurementsTypes.Where(u => u.TypeId == e.TypeId).ToList()
+                    }
+
+                }).ToListAsync();
         }
         [HttpGet(template: "{id}")]
         public async Task<ActionResult<Sensor>> GetSensorsItem(int id)
@@ -49,8 +67,8 @@ namespace IsayAPI.Controllers
             Sensor need_sensor = await _sensorsContext.Sensors.FindAsync(id);
             if (sensor != null)
             {
-                need_sensor.sensor_name = sensor.sensor_name;
-                need_sensor.sensor_id = sensor.sensor_id;
+                need_sensor.SensorName = sensor.SensorName;
+                need_sensor.SensorId = sensor.SensorId;
                 await _sensorsContext.SaveChangesAsync();
             }
 

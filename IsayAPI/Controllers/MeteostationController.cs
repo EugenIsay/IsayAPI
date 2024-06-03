@@ -9,8 +9,8 @@ namespace IsayAPI.Controllers
     [ApiController]
     public class MeteostationController: ControllerBase
     {
-        private readonly Context _meteostationsContext;
-        public MeteostationController(Context context) 
+        private readonly User8Context _meteostationsContext;
+        public MeteostationController(User8Context context) 
         {
             _meteostationsContext = context;
         }
@@ -47,10 +47,10 @@ namespace IsayAPI.Controllers
             Meteostation need_meteostation = await _meteostationsContext.Meteostations.FindAsync(id);
             if (need_meteostation != null)
             {
-                need_meteostation.station_id = meteostation.station_id;
-                need_meteostation.station_name = meteostation.station_name;
-                need_meteostation.station_long = meteostation.station_long;
-                need_meteostation.station_lat = meteostation.station_lat;
+                need_meteostation.StationId = meteostation.StationId;
+                need_meteostation.StationName = meteostation.StationName;
+                need_meteostation.StationLatitude = meteostation.StationLatitude;
+                need_meteostation.StationLongitude = meteostation.StationLongitude;
                 await _meteostationsContext.SaveChangesAsync();
             }
             return NoContent();

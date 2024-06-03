@@ -1,9 +1,19 @@
-namespace IsayAPI;
+﻿using System;
+using System.Collections.Generic;
 
-public class Measurement
+namespace IsayAPI.Models;
+
+public partial class Measurement
 {
-    public int sensor_inventory_number { get; set; }
-    public decimal measurement_value { get; set; }
-    public DateTime measurement_ts { get; set; }
-    public int measurement_type { get; set; }
+    public int? SensorInventoryNumber { get; set; }
+
+    public decimal? MeasurementValue { get; set; }
+
+    public DateTime? MeasurementTs { get; set; }
+
+    public int? MeasurementType { get; set; }
+
+    public virtual MeasurementsType? MeasurementTypeNavigation { get; set; }
+
+    public virtual MeteostationsSensor? SensorInventoryNumberNavigation { get; set; }
 }

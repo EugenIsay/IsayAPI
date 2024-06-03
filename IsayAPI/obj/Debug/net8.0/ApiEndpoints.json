@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "IsayAPI.Controllers.ApiController",
-    "Method": "GetSensors",
-    "RelativePath": "api/Api",
+    "ContainingType": "IsayAPI.Controllers.MeteostationController",
+    "Method": "GeMeteostations",
+    "RelativePath": "api/Meteostation",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[IsayAPI.Models.Sensor, IsayAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[IsayAPI.Models.Meteostation, IsayAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,9 +20,277 @@
     ]
   },
   {
-    "ContainingType": "IsayAPI.Controllers.ApiController",
+    "ContainingType": "IsayAPI.Controllers.MeteostationController",
     "Method": "AddSensor",
-    "RelativePath": "api/Api",
+    "RelativePath": "api/Meteostation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "meteostation",
+        "Type": "IsayAPI.Models.Meteostation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IsayAPI.Models.Meteostation, IsayAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.MeteostationController",
+    "Method": "GetMeteostationsItem",
+    "RelativePath": "api/Meteostation/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IsayAPI.Models.Meteostation",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.MeteostationController",
+    "Method": "DeleteSensor",
+    "RelativePath": "api/Meteostation/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IsayAPI.Models.Meteostation, IsayAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.MeteostationController",
+    "Method": "UpdateSensor",
+    "RelativePath": "api/Meteostation/{id}, {sensor}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "meteostation",
+        "Type": "IsayAPI.Models.Meteostation",
+        "IsRequired": true
+      },
+      {
+        "Name": "sensor",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IsayAPI.Models.Meteostation, IsayAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.MTController",
+    "Method": "GetMesType",
+    "RelativePath": "api/MT",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IsayAPI.Models.MeasurementsType, IsayAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.MTController",
+    "Method": "AddMesType",
+    "RelativePath": "api/MT",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mt",
+        "Type": "IsayAPI.Models.MeasurementsType",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IsayAPI.Models.MeasurementsType, IsayAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.MTController",
+    "Method": "GetMesTypeItem",
+    "RelativePath": "api/MT/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IsayAPI.Models.MeasurementsType",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.MTController",
+    "Method": "DeleteMesType",
+    "RelativePath": "api/MT/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IsayAPI.Models.MeasurementsType, IsayAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.MTController",
+    "Method": "UpdateMesType",
+    "RelativePath": "api/MT/{id}, {sensor}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "mt",
+        "Type": "IsayAPI.Models.MeasurementsType",
+        "IsRequired": true
+      },
+      {
+        "Name": "sensor",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IsayAPI.Models.MeasurementsType, IsayAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.SensorController",
+    "Method": "GetSensors",
+    "RelativePath": "api/Sensor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IsayAPI.Models.Response.SensorResponse, IsayAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.SensorController",
+    "Method": "AddSensor",
+    "RelativePath": "api/Sensor",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -46,20 +314,77 @@
     ]
   },
   {
-    "ContainingType": "IsayAPI.Controllers.ApiController",
-    "Method": "AddSensor",
-    "RelativePath": "api/Api/{id}",
+    "ContainingType": "IsayAPI.Controllers.SensorController",
+    "Method": "GetSensorsItem",
+    "RelativePath": "api/Sensor/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IsayAPI.Models.Sensor",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.SensorController",
+    "Method": "DeleteSensor",
+    "RelativePath": "api/Sensor/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[IsayAPI.Models.Sensor, IsayAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IsayAPI.Controllers.SensorController",
+    "Method": "UpdateSensor",
+    "RelativePath": "api/Sensor/{id}, {sensor}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
       {
         "Name": "sensor",
         "Type": "IsayAPI.Models.Sensor",
         "IsRequired": true
       },
       {
-        "Name": "id",
+        "Name": "sensor",
         "Type": "",
         "IsRequired": true
       }
