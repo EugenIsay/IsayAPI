@@ -37,6 +37,28 @@ namespace IsayAPI.Controllers
                     }
 
                 }).ToListAsync();
+            //var sensors = await _sensorsContext.Sensors.ToListAsync();
+
+            //var sensorIds = sensors.Select(s => s.SensorId).ToList();
+
+            //var sensorsMeasurements = await _sensorsContext.SensorsMeasurements
+            //    .Where(sm => sensorIds.Contains(sm.SensorId))
+            //    .ToListAsync();
+
+            //var measurementTypes = await _sensorsContext.MeasurementsTypes
+            //    .Where(mt => sensorsMeasurements.Any(sm => sm.TypeId == mt.TypeId))
+            //    .ToListAsync();
+
+            //var result = sensors.Select(s => new
+            //{
+            //    SensorId = s.SensorId,
+            //    SensorName = s.SensorName,
+            //    MeasurementTypes = measurementTypes
+            //        .Where(mt => sensorsMeasurements.Any(sm => sm.SensorId == s.SensorId && sm.TypeId == mt.TypeId))
+            //        .ToList()
+            //})
+            //.ToList();
+
         }
         [HttpGet(template: "{id}")]
         public async Task<ActionResult<Sensor>> GetSensorsItem(int id)
