@@ -114,9 +114,7 @@ public partial class User8Context : DbContext
             entity.Property(e => e.SensorId).HasColumnName("sensor_id");
             entity.Property(e => e.StationId).HasColumnName("station_id");
 
-            entity.HasOne(d => d.Sensor).WithMany(p => p.MeteostationsSensors)
-                .HasForeignKey(d => d.SensorId)
-                .HasConstraintName("meteostations_sensors_sensors_fk");
+            entity.HasOne(d => d.Sensor);
 
             entity.HasOne(d => d.Station).WithMany(p => p.MeteostationsSensors)
                 .HasForeignKey(d => d.StationId)

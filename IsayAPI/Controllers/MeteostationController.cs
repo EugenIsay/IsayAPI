@@ -1,4 +1,5 @@
 ﻿using IsayAPI.Models;
+using IsayAPI.Models.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,14 +16,48 @@ namespace IsayAPI.Controllers
             _meteostationsContext = context;
         }
         [HttpGet]
-        public async Task<ActionResult<List<Meteostation>>> GeMeteostations()
+        public async Task<ActionResult<List<MeteostationResponse>>> GeMeteostations()
         {
-            return await _meteostationsContext.Meteostations.Select(meteostation =>  meteostation).ToListAsync();
+
+            var meteostations = await _meteostationsContext.Meteostations
+                .Select(m => new MeteostationResponse {StationId = m.StationId, StationName = m.StationName, StationLatitude = m.StationLatitude, StationLongitude = m.StationLongitude }).ToListAsync();
+            foreach (var meteostation in meteostations)
+            {
+                meteostation.meteostationsSensors = await _meteostationsContext.MeteostationsSensors.Where(mes => mes.StationId == meteostation.StationId).Join(
+                    _meteostationsContext.Sensors,
+                    m => m.SensorId,
+                    s => s.SensorId,
+                    (m, s) => new MeteostationsSensorsResponse
+                    {
+                        SensorInventoryNumber = m.SensorInventoryNumber,
+                        SensorId = s.SensorId,
+                        SensorName = s.SensorName,
+                        AddedTs = m.AddedTs,
+                        RemovedTs = m.RemovedTs
+                    }
+                    ).ToListAsync();
+            }
+            return meteostations;
         }
         [HttpGet(template: "{id}")]
-        public async Task<ActionResult<Meteostation>> GetMeteostationsItem(int id)
+        public async Task<ActionResult<MeteostationResponse>> GetMeteostationsItem(int id)
         {
-            return await _meteostationsContext.Meteostations.FindAsync(id) ?? throw new InvalidOperationException();
+            Meteostation ms = _meteostationsContext.Meteostations.Find(id);
+            var meteostation = new MeteostationResponse { StationId = ms.StationId, StationName = ms.StationName, StationLatitude = ms.StationLatitude, StationLongitude = ms.StationLongitude };
+            meteostation.meteostationsSensors = await _meteostationsContext.MeteostationsSensors.Where(mes => mes.StationId == meteostation.StationId).Join(
+                _meteostationsContext.Sensors,
+                m => m.SensorId,
+                s => s.SensorId,
+                (m, s) => new MeteostationsSensorsResponse
+                {
+                    SensorInventoryNumber = m.SensorInventoryNumber,
+                    SensorId = s.SensorId,
+                    SensorName = s.SensorName,
+                    AddedTs = m.AddedTs,
+                    RemovedTs = m.RemovedTs
+                }
+                ).ToListAsync();
+            return meteostation ?? throw new InvalidOperationException();
         }
         [HttpDelete(template: "{id}")]
         public async Task<ActionResult<List<Meteostation>>> DeleteSensor(int id)

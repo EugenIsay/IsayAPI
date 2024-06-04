@@ -14,71 +14,84 @@ namespace IsayAPI.Controllers
     {
 
         private readonly User8Context _sensorsContext;
-        public SensorController(User8Context context) 
+        public SensorController(User8Context context)
         {
             _sensorsContext = context;
         }
         [HttpGet]
         public async Task<ActionResult<List<SensorResponse>>> GetSensors()
         {
-            //List<Sensor> sensors = new List<Sensor>();
-            //_sensorsContext.SensorsMeasurements.Select(s => s.MeasurementFormula);
-            //return await _sensorsContext.Sensors.Select(sensor => sensor).LeftJoin(_sensorsContext.SensorsMeasurements, s => s.SensorId, e => e.SensorId, (s, e) => sensors);
-            return await _sensorsContext.Sensors.Select(sensor => sensor)
-                .Join(_sensorsContext.SensorsMeasurements,
-                s => s.SensorId,
-                e => e.SensorId,
-                (s, e) => new List<SensorResponse>
-                {  
-                    new SensorResponse { 
-                        sensor_id = s.SensorId,
-                        sensor_name = s.SensorName,
-                        measurements = _sensorsContext.MeasurementsTypes.Where(u => u.TypeId == e.TypeId).ToList()
+            var sensors = await _sensorsContext.Sensors.Select(s => new SensorResponse {sensor_id = s.SensorId, sensor_name = s.SensorName}).ToListAsync();
+            foreach (var sensor in sensors) {
+                sensor.measurements = await _sensorsContext.SensorsMeasurements.Where(mes => mes.SensorId == sensor.sensor_id).Join(
+                    _sensorsContext.MeasurementsTypes,
+                    e => e.TypeId,
+                    m => m.TypeId,
+                    (e, m) => new SensorMeasurementsResponse
+                    {
+                        MeasurementFormula = e.MeasurementFormula,
+                        TypeName = m.TypeName,
+                        TypeUnits = m.TypeUnits
                     }
-
-                }).ToListAsync();
-            //var sensors = await _sensorsContext.Sensors.ToListAsync();
-
-            //var sensorIds = sensors.Select(s => s.SensorId).ToList();
-
-            //var sensorsMeasurements = await _sensorsContext.SensorsMeasurements
-            //    .Where(sm => sensorIds.Contains(sm.SensorId))
-            //    .ToListAsync();
-
-            //var measurementTypes = await _sensorsContext.MeasurementsTypes
-            //    .Where(mt => sensorsMeasurements.Any(sm => sm.TypeId == mt.TypeId))
-            //    .ToListAsync();
-
-            //var result = sensors.Select(s => new
-            //{
-            //    SensorId = s.SensorId,
-            //    SensorName = s.SensorName,
-            //    MeasurementTypes = measurementTypes
-            //        .Where(mt => sensorsMeasurements.Any(sm => sm.SensorId == s.SensorId && sm.TypeId == mt.TypeId))
-            //        .ToList()
-            //})
-            //.ToList();
-
+                    ).ToListAsync();
+            }
+            return sensors;
         }
         [HttpGet(template: "{id}")]
-        public async Task<ActionResult<Sensor>> GetSensorsItem(int id)
+        public async Task<ActionResult<SensorResponse>> GetSensorsItem(int id)
         {
-            return await _sensorsContext.Sensors.FindAsync(id) ?? throw new InvalidOperationException();
+            var sensor = new SensorResponse {sensor_id = _sensorsContext.Sensors.Find(id).SensorId, sensor_name = _sensorsContext.Sensors.Find(id).SensorName };
+            sensor.measurements = await _sensorsContext.SensorsMeasurements.Where(mes => mes.SensorId == sensor.sensor_id).Join(
+                    _sensorsContext.MeasurementsTypes,
+                    e => e.TypeId,
+                    m => m.TypeId,
+                    (e, m) => new SensorMeasurementsResponse
+                    {
+                        MeasurementFormula = e.MeasurementFormula,
+                        TypeName = m.TypeName,
+                        TypeUnits = m.TypeUnits
+                    }
+                    ).ToListAsync();
+            return sensor ?? throw new InvalidOperationException();
+
         }
         [HttpDelete(template: "{id}")]
         public async Task<ActionResult<List<Sensor>>> DeleteSensor(int id)
         {
-            Sensor? sensor = await _sensorsContext.Sensors.FindAsync(id);
-            if (sensor != null) { _sensorsContext.Remove(sensor); }
+            List<MeteostationsSensor> tmp = _sensorsContext.MeteostationsSensors.Where(s => s.SensorId == id).ToList();
+            if (_sensorsContext.MeteostationsSensors.Where(s => s.SensorId == id).ToList().Count() != 0)
+            {
+                Sensor? sensor = await _sensorsContext.Sensors.FindAsync(id);
+                if (sensor != null) { 
+                    _sensorsContext.Sensors.Remove(sensor); 
+                    foreach (var sm in _sensorsContext.SensorsMeasurements)
+                    {
+                        if (sm.SensorId == sensor.SensorId)
+                        {
+                            _sensorsContext.Remove(sm);
+                        }
+                    }
+                }
+            }
             await _sensorsContext.SaveChangesAsync();
             return NoContent();
-
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<Sensor>>> AddSensor(Sensor sensor)
+        public async Task<ActionResult<List<Sensor>>> AddSensor(SensorResponse sensor)
         {
-            _sensorsContext.Add(sensor);
+            var TypeNames = _sensorsContext.MeasurementsTypes.Select(mt => mt.TypeName).ToList();
+            foreach (var mes in sensor.measurements)
+            {
+                if (TypeNames.Contains(mes.TypeName))
+                {
+                    _sensorsContext.SensorsMeasurements.Add(new SensorsMeasurement { 
+                        TypeId = Array.IndexOf(TypeNames.ToArray(), mes.TypeName),
+                        SensorId = sensor.sensor_id,
+                        MeasurementFormula = mes.MeasurementFormula
+                    });;
+                }
+            }
             await _sensorsContext.SaveChangesAsync();
             return NoContent();
 
