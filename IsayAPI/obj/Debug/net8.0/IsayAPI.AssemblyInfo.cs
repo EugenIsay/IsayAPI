@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IsayAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1218bbd4d7b500d08730ac00c836beae9a8dd088")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+794de9e78e3fe52f81c9b93672d018d4d675516e")]
 [assembly: System.Reflection.AssemblyProductAttribute("IsayAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IsayAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

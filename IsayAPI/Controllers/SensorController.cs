@@ -1,4 +1,5 @@
 ﻿using IsayAPI.Models;
+using IsayAPI.Models.Request;
 using IsayAPI.Models.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -78,7 +79,7 @@ namespace IsayAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<Sensor>>> AddSensor(SensorResponse sensor)
+        public async Task<ActionResult<List<Sensor>>> AddSensor(SensorRequest sensor)
         {
             var TypeNames = _sensorsContext.MeasurementsTypes.Select(mt => mt.TypeName).ToList();
             foreach (var mes in sensor.measurements)
