@@ -138,9 +138,8 @@ public partial class User8Context : DbContext
         modelBuilder.Entity<SensorsMeasurement>(entity =>
         {
             entity
-                .HasNoKey()
-                .ToTable("sensors_measurements");
-
+                .HasKey(e => new { e.SensorId, e.TypeId });
+            entity.ToTable("sensors");
             entity.Property(e => e.MeasurementFormula)
                 .HasMaxLength(255)
                 .HasColumnName("measurement_formula");
