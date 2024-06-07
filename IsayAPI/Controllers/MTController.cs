@@ -28,7 +28,15 @@ namespace IsayAPI.Controllers
         public async Task<ActionResult<List<MeasurementsType>>> DeleteMesType(int id)
         {
             MeasurementsType? mt = await _mtContext.MeasurementsTypes.FindAsync(id);
-            if (mt != null) { _mtContext.Remove(mt); }
+            List<SensorsMeasurement> ToDel = _mtContext.SensorsMeasurements.Where(e => e.TypeId == id).ToList();
+            if (mt != null && _mtContext.Measurements.Where(e => e.MeasurementType == id).Count() == 0)
+            {
+                foreach (var SM in ToDel)
+                {
+                    _mtContext.SensorsMeasurements.Remove(SM);
+                }
+                _mtContext.MeasurementsTypes.Remove(mt);
+            }
             await _mtContext.SaveChangesAsync();
             return NoContent();
 
@@ -36,7 +44,7 @@ namespace IsayAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<List<MeasurementsType>>> AddMesType(MeasurementsType mt)
         {
-            _mtContext.Add(mt);
+            _mtContext.MeasurementsTypes.Add(mt);
             await _mtContext.SaveChangesAsync();
             return NoContent();
 
@@ -45,6 +53,7 @@ namespace IsayAPI.Controllers
         public async Task<ActionResult<List<MeasurementsType>>> UpdateMesType(int id, MeasurementsType mt)
         {
             MeasurementsType need_mt = await _mtContext.MeasurementsTypes.FindAsync(id);
+            
             if (need_mt != null)
             {
                 need_mt.TypeId = mt.TypeId;

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PROFI\\Desktop\\IsayProj\\Api\\IsayAPI\\IsayAPI.csproj": {}
+    "/home/student/Desktop/Proj/IsayAPI/IsayAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PROFI\\Desktop\\IsayProj\\Api\\IsayAPI\\IsayAPI.csproj": {
+    "/home/student/Desktop/Proj/IsayAPI/IsayAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PROFI\\Desktop\\IsayProj\\Api\\IsayAPI\\IsayAPI.csproj",
+        "projectUniqueName": "/home/student/Desktop/Proj/IsayAPI/IsayAPI.csproj",
         "projectName": "IsayAPI",
-        "projectPath": "C:\\Users\\PROFI\\Desktop\\IsayProj\\Api\\IsayAPI\\IsayAPI.csproj",
-        "packagesPath": "C:\\Users\\PROFI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PROFI\\Desktop\\IsayProj\\Api\\IsayAPI\\obj\\",
+        "projectPath": "/home/student/Desktop/Proj/IsayAPI/IsayAPI.csproj",
+        "packagesPath": "/home/student/.nuget/packages/",
+        "outputPath": "/home/student/Desktop/Proj/IsayAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PROFI\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/student/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

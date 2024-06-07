@@ -60,7 +60,7 @@ namespace IsayAPI.Controllers
         public async Task<ActionResult<List<Sensor>>> DeleteSensor(int id)
         {
             List<MeteostationsSensor> tmp = _sensorsContext.MeteostationsSensors.Where(s => s.SensorId == id).ToList();
-            if (_sensorsContext.MeteostationsSensors.Where(s => s.SensorId == id).ToList().Count() != 0)
+            if (_sensorsContext.MeteostationsSensors.Where(s => s.SensorId == id).ToList().Count() == 0)
             {
                 Sensor? sensor = await _sensorsContext.Sensors.FindAsync(id);
                 if (sensor != null) { 
@@ -81,17 +81,21 @@ namespace IsayAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<List<Sensor>>> AddSensor(SensorRequest sensor)
         {
-            var TypeNames = _sensorsContext.MeasurementsTypes.Select(mt => mt.TypeName).ToList();
+            Sensor new_sensor = new Sensor { SensorName = sensor.sensor_name };
+            
+            _sensorsContext.Sensors.Add(new_sensor);
+
+            await _sensorsContext.SaveChangesAsync();
+            var TypeNames = _sensorsContext.MeasurementsTypes.Select(mt => mt).ToList();
             foreach (var mes in sensor.measurements)
             {
-                if (TypeNames.Contains(mes.TypeName))
-                {
+                
                     _sensorsContext.SensorsMeasurements.Add(new SensorsMeasurement { 
-                        TypeId = Array.IndexOf(TypeNames.ToArray(), mes.TypeName),
-                        SensorId = sensor.sensor_id,
+                        TypeId = TypeNames.FindLast(find => find.TypeName == mes.TypeName)?.TypeId,
+                        SensorId = new_sensor.SensorId,
                         MeasurementFormula = mes.MeasurementFormula
                     });;
-                }
+                
             }
             await _sensorsContext.SaveChangesAsync();
             return NoContent();

@@ -60,24 +60,44 @@ namespace IsayAPI.Controllers
             return meteostation ?? throw new InvalidOperationException();
         }
         [HttpDelete(template: "{id}")]
-        public async Task<ActionResult<List<Meteostation>>> DeleteSensor(int id)
+        public async Task<ActionResult<List<Meteostation>>> DeleteMeteostation(int id)
         {
             Meteostation? meteostation = await _meteostationsContext.Meteostations.FindAsync(id);
-            if (meteostation!= null) { _meteostationsContext.Remove(meteostation); }
+            List<int> sync = _meteostationsContext.MeteostationsSensors.Where(e => e.StationId == id).Select(s => s.SensorInventoryNumber).ToList();
+            bool Go = true;
+            foreach (var invnum in sync)
+            {
+                if (_meteostationsContext.Measurements
+                        .Where(e => e.SensorInventoryNumber.ToString().Contains(invnum.ToString())).Count() != 0)
+                {
+                    Go = false;
+                }
+            }
+
+            if (Go && meteostation != null)
+            {
+                _meteostationsContext.Meteostations.Remove(meteostation);
+                foreach (var invnum in sync)
+                {
+                    _meteostationsContext.MeteostationsSensors.Remove(
+                        _meteostationsContext.MeteostationsSensors.FirstOrDefault(
+                            e => e.SensorInventoryNumber == invnum));
+                }
+            }
             await _meteostationsContext.SaveChangesAsync();
             return NoContent();
 
         }
         [HttpPost]
-        public async Task<ActionResult<List<Meteostation>>> AddSensor(Meteostation meteostation)
+        public async Task<ActionResult<List<Meteostation>>> AddMeteostation(Meteostation meteostation)
         {
-            _meteostationsContext.Add(meteostation);
+            _meteostationsContext.Meteostations.Add(meteostation);
             await _meteostationsContext.SaveChangesAsync();
             return NoContent();
 
         }
         [HttpPut(template: "{id}, {sensor}")]
-        public async Task<ActionResult<List<Meteostation>>> UpdateSensor(int id, Meteostation meteostation)
+        public async Task<ActionResult<List<Meteostation>>> UpdateMeteostation(int id, Meteostation meteostation)
         {
             Meteostation need_meteostation = await _meteostationsContext.Meteostations.FindAsync(id);
             if (need_meteostation != null)
