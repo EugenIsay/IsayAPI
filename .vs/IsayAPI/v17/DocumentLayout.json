@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\zheka\\Desktop\\Projects\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\controllers\\sensorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\controllers\\sensorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\request\\sensorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\request\\sensorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\request\\sensormeasurementsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\request\\sensormeasurementsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\response\\sensormeasurementsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\response\\sensormeasurementsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\response\\sensorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\response\\sensorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\sensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\user8context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\user8context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\controllers\\measurementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\controllers\\measurementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\controllers\\sensorsmeasurementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\controllers\\sensorsmeasurementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\controllers\\sensorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\controllers\\sensorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\controllers\\mscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\controllers\\mscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\request\\measuremeantrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\request\\measuremeantrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\measurement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\measurement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\controllers\\meteostationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\controllers\\meteostationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\controllers\\mtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,40 +39,20 @@
       "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\sensorsmeasurement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\meteostationssensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\meteostationssensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\request\\sensormeasurementsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\request\\sensormeasurementsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\request\\sensorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\request\\sensorrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\controllers\\meteostationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\controllers\\meteostationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\request\\msrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\request\\msrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\response\\meteostationssensorsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\response\\meteostationssensorsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\response\\meteostationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\response\\meteostationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\meteostation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\meteostation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\measurementstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\measurementstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\response\\measurementstyperesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\response\\measurementstyperesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\measurement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\measurement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\models\\request\\mtrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|solutionrelative:isayapi\\models\\request\\mtrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD3FA2BA-DCB0-4E66-A324-FD973C2565F5}|IsayAPI\\IsayAPI.csproj|c:\\users\\zheka\\desktop\\projects\\api\\isayapi\\isayapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -90,258 +66,197 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SensorMeasurementsRequest.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\SensorMeasurementsRequest.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\Request\\SensorMeasurementsRequest.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\SensorMeasurementsRequest.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\Request\\SensorMeasurementsRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T17:38:03.783Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SensorRequest.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\SensorRequest.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\Request\\SensorRequest.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\SensorRequest.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\Request\\SensorRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "MeasuremeantRequest.cs",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\MeasuremeantRequest.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Models\\Request\\MeasuremeantRequest.cs",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\MeasuremeantRequest.cs",
+              "RelativeToolTip": "IsayAPI\\Models\\Request\\MeasuremeantRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T17:32:43.742Z",
+              "WhenOpened": "2024-06-09T17:43:13.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "SensorsMeasurementsController.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\SensorsMeasurementsController.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Controllers\\SensorsMeasurementsController.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\SensorsMeasurementsController.cs",
-              "RelativeToolTip": "IsayAPI\\Controllers\\SensorsMeasurementsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T12:00:13.123Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MeteostationsSensorsResponse.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Response\\MeteostationsSensorsResponse.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\Response\\MeteostationsSensorsResponse.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Response\\MeteostationsSensorsResponse.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\Response\\MeteostationsSensorsResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T11:36:24.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MeteostationResponse.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Response\\MeteostationResponse.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\Response\\MeteostationResponse.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Response\\MeteostationResponse.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\Response\\MeteostationResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T11:28:41.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MeasurementsTypeResponse.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Response\\MeasurementsTypeResponse.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\Response\\MeasurementsTypeResponse.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Response\\MeasurementsTypeResponse.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\Response\\MeasurementsTypeResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T10:49:59.18Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SensorMeasurementsResponse.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Response\\SensorMeasurementsResponse.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\Response\\SensorMeasurementsResponse.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Response\\SensorMeasurementsResponse.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\Response\\SensorMeasurementsResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T10:46:50.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SensorResponse.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Response\\SensorResponse.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\Response\\SensorResponse.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Response\\SensorResponse.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\Response\\SensorResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T09:30:56.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SensorsMeasurement.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\SensorsMeasurement.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\SensorsMeasurement.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\SensorsMeasurement.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\SensorsMeasurement.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:55:08.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Sensor.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Sensor.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\Sensor.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Sensor.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\Sensor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:55:04.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MeteostationsSensor.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\MeteostationsSensor.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\MeteostationsSensor.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\MeteostationsSensor.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\MeteostationsSensor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:55:01.644Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Meteostation.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Meteostation.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\Meteostation.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Meteostation.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\Meteostation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:54:58.22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MeasurementsType.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\MeasurementsType.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\MeasurementsType.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\MeasurementsType.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\MeasurementsType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:54:55.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Measurement.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Measurement.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Models\\Measurement.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Measurement.cs",
-              "RelativeToolTip": "IsayAPI\\Models\\Measurement.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:53:15.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User8Context.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\User8Context.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\User8Context.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\User8Context.cs",
-              "RelativeToolTip": "IsayAPI\\User8Context.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:50:45.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IsayAPI.csproj",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\IsayAPI.csproj",
-              "RelativeDocumentMoniker": "IsayAPI\\IsayAPI.csproj",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\IsayAPI.csproj",
-              "RelativeToolTip": "IsayAPI\\IsayAPI.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-03T08:35:13.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SensorController.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\SensorController.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Controllers\\SensorController.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\SensorController.cs",
-              "RelativeToolTip": "IsayAPI\\Controllers\\SensorController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAADwv1YAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T13:08:20.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "MTController.cs",
               "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\MTController.cs",
               "RelativeDocumentMoniker": "IsayAPI\\Controllers\\MTController.cs",
               "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\MTController.cs",
               "RelativeToolTip": "IsayAPI\\Controllers\\MTController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T06:33:39.534Z"
+              "WhenOpened": "2024-06-09T17:29:33.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SensorController.cs",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\SensorController.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Controllers\\SensorController.cs",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\SensorController.cs",
+              "RelativeToolTip": "IsayAPI\\Controllers\\SensorController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwEwAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T17:26:53.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SensorsMeasurement.cs",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\SensorsMeasurement.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Models\\SensorsMeasurement.cs",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\SensorsMeasurement.cs",
+              "RelativeToolTip": "IsayAPI\\Models\\SensorsMeasurement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T17:24:07.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MSRequest.cs",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\MSRequest.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Models\\Request\\MSRequest.cs",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\MSRequest.cs",
+              "RelativeToolTip": "IsayAPI\\Models\\Request\\MSRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T17:22:51.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SensorsMeasurementsController.cs",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\SensorsMeasurementsController.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Controllers\\SensorsMeasurementsController.cs",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\SensorsMeasurementsController.cs",
+              "RelativeToolTip": "IsayAPI\\Controllers\\SensorsMeasurementsController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T17:22:30.727Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "MTRequest.cs",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\MTRequest.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Models\\Request\\MTRequest.cs",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\MTRequest.cs",
+              "RelativeToolTip": "IsayAPI\\Models\\Request\\MTRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T17:22:16.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SensorRequest.cs",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\SensorRequest.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Models\\Request\\SensorRequest.cs",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\SensorRequest.cs",
+              "RelativeToolTip": "IsayAPI\\Models\\Request\\SensorRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T17:22:13.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SensorMeasurementsRequest.cs",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\SensorMeasurementsRequest.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Models\\Request\\SensorMeasurementsRequest.cs",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Request\\SensorMeasurementsRequest.cs",
+              "RelativeToolTip": "IsayAPI\\Models\\Request\\SensorMeasurementsRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T17:22:05.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MeteostationController.cs",
               "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\MeteostationController.cs",
               "RelativeDocumentMoniker": "IsayAPI\\Controllers\\MeteostationController.cs",
               "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\MeteostationController.cs",
               "RelativeToolTip": "IsayAPI\\Controllers\\MeteostationController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAUwDUAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T06:33:34.141Z"
+              "WhenOpened": "2024-06-09T17:16:01.473Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Program.cs",
-              "RelativeDocumentMoniker": "IsayAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Program.cs",
-              "RelativeToolTip": "IsayAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "MeasurementsController.cs",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\MeasurementsController.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Controllers\\MeasurementsController.cs",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\MeasurementsController.cs",
+              "RelativeToolTip": "IsayAPI\\Controllers\\MeasurementsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T06:31:56.826Z"
+              "WhenOpened": "2024-06-09T17:15:57.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Measurement.cs",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Measurement.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Models\\Measurement.cs",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Models\\Measurement.cs",
+              "RelativeToolTip": "IsayAPI\\Models\\Measurement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T17:05:34.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MSController.cs",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\MSController.cs",
+              "RelativeDocumentMoniker": "IsayAPI\\Controllers\\MSController.cs",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\Controllers\\MSController.cs",
+              "RelativeToolTip": "IsayAPI\\Controllers\\MSController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowDcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T16:40:26.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IsayAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\IsayAPI.csproj",
+              "RelativeDocumentMoniker": "IsayAPI\\IsayAPI.csproj",
+              "ToolTip": "C:\\Users\\zheka\\Desktop\\Projects\\API\\IsayAPI\\IsayAPI.csproj",
+              "RelativeToolTip": "IsayAPI\\IsayAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-03T08:35:13.156Z",
+              "EditorCaption": ""
             }
           ]
         }

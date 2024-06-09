@@ -24,7 +24,7 @@ namespace IsayAPI.Controllers
         {
             var sensors = await _sensorsContext.Sensors.Select(s => new SensorResponse {sensor_id = s.SensorId, sensor_name = s.SensorName}).ToListAsync();
             foreach (var sensor in sensors) {
-                sensor.measurements = await _sensorsContext.SensorsMeasurements.Where(mes => mes.SensorId == sensor.sensor_id).Join(
+                sensor.sensors_measurements = await _sensorsContext.SensorsMeasurements.Where(mes => mes.SensorId == sensor.sensor_id).Join(
                     _sensorsContext.MeasurementsTypes,
                     e => e.TypeId,
                     m => m.TypeId,
@@ -42,7 +42,7 @@ namespace IsayAPI.Controllers
         public async Task<ActionResult<SensorResponse>> GetSensorsItem(int id)
         {
             var sensor = new SensorResponse {sensor_id = _sensorsContext.Sensors.Find(id).SensorId, sensor_name = _sensorsContext.Sensors.Find(id).SensorName };
-            sensor.measurements = await _sensorsContext.SensorsMeasurements.Where(mes => mes.SensorId == sensor.sensor_id).Join(
+            sensor.sensors_measurements = await _sensorsContext.SensorsMeasurements.Where(mes => mes.SensorId == sensor.sensor_id).Join(
                     _sensorsContext.MeasurementsTypes,
                     e => e.TypeId,
                     m => m.TypeId,
@@ -86,12 +86,12 @@ namespace IsayAPI.Controllers
             _sensorsContext.Sensors.Add(new_sensor);
 
             await _sensorsContext.SaveChangesAsync();
-            var TypeNames = _sensorsContext.MeasurementsTypes.Select(mt => mt).ToList();
+            var TypesId = _sensorsContext.MeasurementsTypes.Select(mt => mt).ToList();
             foreach (var mes in sensor.measurements)
             {
                 
                     _sensorsContext.SensorsMeasurements.Add(new SensorsMeasurement { 
-                        TypeId = TypeNames.FindLast(find => find.TypeName == mes.TypeName)?.TypeId,
+                        TypeId = TypesId.FindLast(find => find.TypeId == mes.TypeId)?.TypeId,
                         SensorId = new_sensor.SensorId,
                         MeasurementFormula = mes.MeasurementFormula
                     });;
@@ -102,16 +102,14 @@ namespace IsayAPI.Controllers
 
         }
         [HttpPut(template: "{id}, {sensor}")]
-        public async Task<ActionResult<List<Sensor>>> UpdateSensor(int id, Sensor sensor)
+        public async Task<ActionResult<List<Sensor>>> UpdateSensor(int id, SensorRequest sensor)
         {
             Sensor need_sensor = await _sensorsContext.Sensors.FindAsync(id);
             if (sensor != null)
             {
-                need_sensor.SensorName = sensor.SensorName;
-                need_sensor.SensorId = sensor.SensorId;
+                need_sensor.SensorName = sensor.sensor_name;
                 await _sensorsContext.SaveChangesAsync();
             }
-
             return NoContent();
         }
     }

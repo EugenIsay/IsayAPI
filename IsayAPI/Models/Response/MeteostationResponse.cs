@@ -9,7 +9,7 @@ namespace IsayAPI.Models.Response
         public decimal? StationLongitude { get; set; }
 
         public decimal? StationLatitude { get; set; }
-        public List<MeteostationsSensorsResponse> meteostationsSensors { get; set; } = null;
+        public List<MSResponseForMet> meteostationsSensors { get; set; } = null;
 
 
     }

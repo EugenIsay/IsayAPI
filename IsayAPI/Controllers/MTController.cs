@@ -42,21 +42,20 @@ namespace IsayAPI.Controllers
 
         }
         [HttpPost]
-        public async Task<ActionResult<List<MeasurementsType>>> AddMesType(MeasurementsType mt)
+        public async Task<ActionResult<List<MeasurementsType>>> AddMesType(MTRequest mt)
         {
-            _mtContext.MeasurementsTypes.Add(mt);
+            _mtContext.MeasurementsTypes.Add(new MeasurementsType { TypeName = mt.TypeName, TypeUnits = mt.TypeUnits });
             await _mtContext.SaveChangesAsync();
             return NoContent();
 
         }
         [HttpPut(template: "{id}, {sensor}")]
-        public async Task<ActionResult<List<MeasurementsType>>> UpdateMesType(int id, MeasurementsType mt)
+        public async Task<ActionResult<List<MeasurementsType>>> UpdateMesType(int id, MTRequest mt)
         {
             MeasurementsType need_mt = await _mtContext.MeasurementsTypes.FindAsync(id);
             
             if (need_mt != null)
             {
-                need_mt.TypeId = mt.TypeId;
                 need_mt.TypeName = mt.TypeName;
                 need_mt.TypeUnits = mt.TypeUnits;
                 await _mtContext.SaveChangesAsync();

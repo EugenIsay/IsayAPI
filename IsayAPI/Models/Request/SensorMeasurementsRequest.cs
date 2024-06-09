@@ -6,7 +6,7 @@ namespace IsayAPI.Models.Request
     {
         public string? MeasurementFormula { get; set; }
 
-        public string? TypeName { get; set; }
+        public int? TypeId { get; set; }
 
     }
 }

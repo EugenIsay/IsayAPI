@@ -16,7 +16,7 @@ namespace IsayAPI.Controllers
             _meteostationsContext = context;
         }
         [HttpGet]
-        public async Task<ActionResult<List<MeteostationResponse>>> GeMeteostations()
+        public async Task<ActionResult<List<MeteostationResponse>>> GetMeteostations()
         {
 
             var meteostations = await _meteostationsContext.Meteostations
@@ -27,7 +27,7 @@ namespace IsayAPI.Controllers
                     _meteostationsContext.Sensors,
                     m => m.SensorId,
                     s => s.SensorId,
-                    (m, s) => new MeteostationsSensorsResponse
+                    (m, s) => new MSResponseForMet
                     {
                         SensorInventoryNumber = m.SensorInventoryNumber,
                         SensorId = s.SensorId,
@@ -48,7 +48,7 @@ namespace IsayAPI.Controllers
                 _meteostationsContext.Sensors,
                 m => m.SensorId,
                 s => s.SensorId,
-                (m, s) => new MeteostationsSensorsResponse
+                (m, s) => new MSResponseForMet
                 {
                     SensorInventoryNumber = m.SensorInventoryNumber,
                     SensorId = s.SensorId,

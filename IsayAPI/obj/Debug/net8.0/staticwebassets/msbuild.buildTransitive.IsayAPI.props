@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/IsayAPI.props" />
+  <Import Project="..\buildMultiTargeting\IsayAPI.props" />
 </Project>

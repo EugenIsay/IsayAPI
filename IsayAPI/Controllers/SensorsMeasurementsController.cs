@@ -1,4 +1,5 @@
 using IsayAPI.Models;
+using IsayAPI.Models.Request;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,9 +16,18 @@ namespace IsayAPI.Controllers
             _smContext = context;
         }
         [HttpGet]
-        public async Task<ActionResult<List<SensorsMeasurement>>> GetMesType()
+        public async Task<ActionResult<List<SensorsMeasurement>>> GetSensorMeasurement()
         {
             return await _smContext.SensorsMeasurements.Select(SensorsMeasurement => SensorsMeasurement).ToListAsync();
+        }
+        [HttpPost]
+        public async Task<ActionResult<List<SensorsMeasurement>>> AddSensorMeasurement(SensorMeasurementsRequest SensorMeasurement, int sensor_id)
+        {
+            SensorsMeasurement new_sm = new SensorsMeasurement { SensorId = sensor_id, TypeId = SensorMeasurement.TypeId, MeasurementFormula = SensorMeasurement.MeasurementFormula };
+            _smContext.SensorsMeasurements.Add(new_sm);
+            await _smContext.SaveChangesAsync();
+            return NoContent();
+
         }
     }
 }

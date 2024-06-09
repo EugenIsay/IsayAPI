@@ -5,7 +5,7 @@
         public int sensor_id { get; set; }
         public string sensor_name { get; set; }
 
-        public List<SensorMeasurementsResponse> measurements { get; set; } = null;
+        public List<SensorMeasurementsResponse> sensors_measurements { get; set; } = null;
        
     }
 }

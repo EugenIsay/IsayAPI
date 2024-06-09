@@ -1,6 +1,6 @@
 namespace IsayAPI.Models.Response
 {
-    public class MeteostationsSensorsResponse
+    public class MSResponseForMet
     {
         public int SensorInventoryNumber { get; set; }
 
