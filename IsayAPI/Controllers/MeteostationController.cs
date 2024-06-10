@@ -1,4 +1,5 @@
 ﻿using IsayAPI.Models;
+using IsayAPI.Models.Request;
 using IsayAPI.Models.Response;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -89,9 +90,9 @@ namespace IsayAPI.Controllers
 
         }
         [HttpPost]
-        public async Task<ActionResult<List<Meteostation>>> AddMeteostation(Meteostation meteostation)
-        {
-            _meteostationsContext.Meteostations.Add(meteostation);
+        public async Task<ActionResult<List<Meteostation>>> AddMeteostation(MeteostationRequest meteostation)
+        { 
+            _meteostationsContext.Meteostations.Add(new Meteostation(){ StationName = meteostation.StationName, StationLatitude = meteostation.StationLatitude, StationLongitude = meteostation.StationLongitude} );
             await _meteostationsContext.SaveChangesAsync();
             return NoContent();
 

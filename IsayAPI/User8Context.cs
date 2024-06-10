@@ -34,6 +34,8 @@ public partial class User8Context : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.UseIdentityColumns();
+        
         modelBuilder.Entity<Measurement>(entity =>
         {
             entity
@@ -65,7 +67,7 @@ public partial class User8Context : DbContext
             entity.ToTable("measurements_type");
 
             entity.Property(e => e.TypeId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd()
                 .HasColumnName("type_id");
             entity.Property(e => e.TypeName)
                 .HasMaxLength(31)
@@ -83,7 +85,7 @@ public partial class User8Context : DbContext
             entity.ToTable("meteostations");
 
             entity.Property(e => e.StationId)
-                .ValueGeneratedNever()
+                .ValueGeneratedOnAdd()
                 .HasColumnName("station_id");
             entity.Property(e => e.StationLatitude)
                 .HasPrecision(5, 2)
@@ -128,8 +130,10 @@ public partial class User8Context : DbContext
             entity.ToTable("sensors");
 
             entity.Property(e => e.SensorId)
-                .ValueGeneratedNever()
-                .HasColumnName("sensor_id");
+                .ValueGeneratedOnAdd()
+                .HasColumnName("sensor_id")
+                ;
+            
             entity.Property(e => e.SensorName)
                 .HasMaxLength(31)
                 .HasColumnName("sensor_name");

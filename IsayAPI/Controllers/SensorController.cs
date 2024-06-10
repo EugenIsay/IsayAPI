@@ -81,14 +81,16 @@ namespace IsayAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<List<Sensor>>> AddSensor(SensorRequest sensor)
         {
-            Sensor new_sensor = new Sensor { SensorName = sensor.sensor_name };
-            
-            _sensorsContext.Sensors.Add(new_sensor);
-
-            await _sensorsContext.SaveChangesAsync();
-            var TypesId = _sensorsContext.MeasurementsTypes.Select(mt => mt).ToList();
-            foreach (var mes in sensor.measurements)
+            using var transaction = _sensorsContext.Database.BeginTransaction();
+            try
             {
+                Sensor new_sensor = new Sensor { SensorName = sensor.sensor_name };
+                _sensorsContext.Sensors.Add(new_sensor);
+                Console.WriteLine(new_sensor.SensorId);
+                _sensorsContext.SaveChanges();
+                var TypesId = _sensorsContext.MeasurementsTypes.Select(mt => mt).ToList();
+                foreach (var mes in sensor.measurements)
+                {
                 
                     _sensorsContext.SensorsMeasurements.Add(new SensorsMeasurement { 
                         TypeId = TypesId.FindLast(find => find.TypeId == mes.TypeId)?.TypeId,
@@ -96,8 +98,15 @@ namespace IsayAPI.Controllers
                         MeasurementFormula = mes.MeasurementFormula
                     });;
                 
+                }
+                await _sensorsContext.SaveChangesAsync();
+                await transaction.CommitAsync();
             }
-            await _sensorsContext.SaveChangesAsync();
+            catch (Exception e)
+            {
+                throw e;
+            }
+
             return NoContent();
 
         }

@@ -8,10 +8,10 @@ namespace IsayAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MSController : ControllerBase
+    public class MeteostationsSensorsController : ControllerBase
     {
         private readonly User8Context _msContext;
-        public MSController(User8Context context)
+        public MeteostationsSensorsController(User8Context context)
         {
             _msContext = context;
         }

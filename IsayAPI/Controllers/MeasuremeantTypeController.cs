@@ -7,10 +7,10 @@ namespace IsayAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MTController: ControllerBase
+    public class MeasuremeantTypeController: ControllerBase
     {
         private readonly User8Context _mtContext;
-        public MTController(User8Context context) 
+        public MeasuremeantTypeController(User8Context context) 
         {
             _mtContext = context;
         }
@@ -45,7 +45,8 @@ namespace IsayAPI.Controllers
         public async Task<ActionResult<List<MeasurementsType>>> AddMesType(MTRequest mt)
         {
             _mtContext.MeasurementsTypes.Add(new MeasurementsType { TypeName = mt.TypeName, TypeUnits = mt.TypeUnits });
-            await _mtContext.SaveChangesAsync();
+                await _mtContext.SaveChangesAsync();
+
             return NoContent();
 
         }
