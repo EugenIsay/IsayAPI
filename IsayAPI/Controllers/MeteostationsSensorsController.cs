@@ -57,7 +57,7 @@ namespace IsayAPI.Controllers
             await _msContext.SaveChangesAsync();
             return NoContent();
         }
-        [HttpDelete(template: "{id}")]
+        [HttpDelete]
         public async Task<ActionResult<List<MeteostationsSensor>>> DeleteSensor(int id, DateTime removed_ts)
         {
 

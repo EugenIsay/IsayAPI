@@ -6,7 +6,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace IsayAPI.Models;
 
 public partial class Sensor
-{   [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+{   
+    [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int SensorId { get; set; }
     public string? SensorName { get; set; }
 }

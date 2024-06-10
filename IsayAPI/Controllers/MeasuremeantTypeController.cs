@@ -50,11 +50,10 @@ namespace IsayAPI.Controllers
             return NoContent();
 
         }
-        [HttpPut(template: "{id}, {sensor}")]
+        [HttpPut]
         public async Task<ActionResult<List<MeasurementsType>>> UpdateMesType(int id, MTRequest mt)
         {
             MeasurementsType need_mt = await _mtContext.MeasurementsTypes.FindAsync(id);
-            
             if (need_mt != null)
             {
                 need_mt.TypeName = mt.TypeName;

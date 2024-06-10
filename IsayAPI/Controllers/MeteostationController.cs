@@ -97,13 +97,12 @@ namespace IsayAPI.Controllers
             return NoContent();
 
         }
-        [HttpPut(template: "{id}, {sensor}")]
-        public async Task<ActionResult<List<Meteostation>>> UpdateMeteostation(int id, Meteostation meteostation)
+        [HttpPut]
+        public async Task<ActionResult<List<Meteostation>>> UpdateMeteostation(int id, MeteostationRequest meteostation)
         {
             Meteostation need_meteostation = await _meteostationsContext.Meteostations.FindAsync(id);
             if (need_meteostation != null)
             {
-                need_meteostation.StationId = meteostation.StationId;
                 need_meteostation.StationName = meteostation.StationName;
                 need_meteostation.StationLatitude = meteostation.StationLatitude;
                 need_meteostation.StationLongitude = meteostation.StationLongitude;

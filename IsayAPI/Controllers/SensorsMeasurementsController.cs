@@ -27,7 +27,20 @@ namespace IsayAPI.Controllers
             _smContext.SensorsMeasurements.Add(new_sm);
             await _smContext.SaveChangesAsync();
             return NoContent();
-
+        }
+        [HttpDelete]
+        public async Task<ActionResult<List<SensorsMeasurement>>> DeleteSensorMeasurement(int? sensor_id, int? measurement_type)
+        {
+            if (sensor_id != null)
+            {
+                _smContext.SensorsMeasurements.RemoveRange(_smContext.SensorsMeasurements.Where(sm => sm.SensorId == sensor_id));
+            }
+            else if (sensor_id != null)
+            {
+                _smContext.SensorsMeasurements.RemoveRange(_smContext.SensorsMeasurements.Where(sm => sm.SensorId == sensor_id));
+            }
+            await _smContext.SaveChangesAsync();
+            return NoContent();
         }
     }
 }

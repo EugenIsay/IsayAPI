@@ -110,13 +110,13 @@ namespace IsayAPI.Controllers
             return NoContent();
 
         }
-        [HttpPut(template: "{id}, {sensor}")]
-        public async Task<ActionResult<List<Sensor>>> UpdateSensor(int id, SensorRequest sensor)
+        [HttpPut(template: "{id}")]
+        public async Task<ActionResult<List<Sensor>>> UpdateSensor(int id, string new_name)
         {
             Sensor need_sensor = await _sensorsContext.Sensors.FindAsync(id);
-            if (sensor != null)
+            if (id != null)
             {
-                need_sensor.SensorName = sensor.sensor_name;
+                need_sensor.SensorName = new_name;
                 await _sensorsContext.SaveChangesAsync();
             }
             return NoContent();

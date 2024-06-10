@@ -15,12 +15,12 @@ namespace IsayAPI.Controllers
         {
             _measurementContext = context;
         }
-        [HttpGet("/measurements")]
+        [HttpGet]
         public async Task<ActionResult<List<Measurement>>> GetMeasurements()
         {
             return await _measurementContext.Measurements.ToListAsync();
         }
-        [HttpGet]
+        [HttpGet("/GetMeasurementsWithValues")]
         public async Task<ActionResult<List<Measurement>>> GetMeasurementsWithValues(int? meteostation_id, int? inventory_num)
         {
             List<Measurement> answer = new List<Measurement>();
